@@ -1,0 +1,21 @@
+
+{ 
+    "manifest_version": 2, 
+    "version": "1.0", 
+    "name": "Astrat", 
+    "description": "Find planets in the universe", 
+    "author": "Niklas Muennighoff",
+
+    "browser_action": {   
+        "default_title": "Astrat - Planets",
+        "default_icon": "astrat_tablogo.png"
+    },
+    "icons": {
+        "128": "astrat_applogo.png"
+     },
+
+    "chrome_url_overrides" : {  
+        "newtab": "newtab.html"
+    },
+    "permissions": [ "activeTab" ]
+}

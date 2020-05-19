@@ -1,0 +1,25 @@
+
+
+
+.body {
+    background-color: grey;
+    background-image:url("blurry.jpg");
+}
+
+.p {
+    text-align: center;
+    font-family: fantasy;
+    font-weight: lighter;
+    color: #CCD6D5;
+    padding: 10px;
+}
+
+.h {
+    color: #CCD6D5;
+    text-align: center;
+    font-weight: bold;
+}
+
+.email {
+    width: 80%;
+}

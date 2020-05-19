@@ -1,0 +1,28 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    Log In
+{% endblock %}
+
+{% block main %}
+    <table class="table">
+      <thead class="thead-dark">
+        <tr>
+          <th scope="col">Symbol</th>
+          <th scope="col">Shares</th>
+          <th scope="col">Price</th>
+          <th scope="col">Transacted</th>
+        </tr>
+      </thead>
+      <tbody>
+        {% for i in range (0, list_dict|length) %}
+        <tr>
+          <th scope="row">{{ list_dict[i]["symbol"] }}</th>
+          <td>{{ list_dict[i]["shares"] }}</td>
+          <td>{{ list_dict[i]["price"] }}</td>
+          <td>{{ list_dict[i]["time"] }}</td>
+        </tr>
+       {% endfor %}
+      </tbody>
+    </table>
+{% endblock %}

@@ -1,0 +1,44 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    Portfolio
+{% endblock %}
+
+{% block main %}
+    <table class="table">
+      <thead class="thead-dark">
+        <tr>
+          <th scope="col">Symbol</th>
+          <th scope="col">Name</th>
+          <th scope="col">Shares</th>
+          <th scope="col">Price</th>
+          <th scope="col">TOTAL</th>
+        </tr>
+      </thead>
+      <tbody>
+        {% for i in range (0, list_dict|length) %}
+        <tr>
+          <th scope="row">{{ list_dict[i]["symbol"] }}</th>
+          <td>{{ list_dict[i]["name"] }}</td>
+          <td>{{ list_dict[i]["shares"] }}</td>
+          <td>{{ list_dict[i]["price"] }}</td>
+          <td>{{ list_dict[i]["total"] }}</td>
+        </tr>
+       {% endfor %}
+       <tr>
+          <th scope="row">CASH</th>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td>{{ cash }}</td>
+       </tr>
+       <tr>
+          <th scope="row"></th>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td style="font-weight: bold">{{ total }}</td>
+       </tr>
+      </tbody>
+    </table>
+{% endblock %}

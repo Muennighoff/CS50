@@ -1,0 +1,23 @@
+body {
+    background-color: black;
+    color: black;
+    overflow-x: hidden;
+}
+
+
+img {
+    transition: background-image 1s linear;
+    animation: fadein 1s;
+    -webkit-animation: fadein 1s;
+    margin: 0; 
+    padding: 0;
+    background-color:black;
+  }
+
+p {
+  padding-left: 10%;
+  color:white;
+  background-color: black;
+  font-family: 'Stardos Stencil';
+}
+  

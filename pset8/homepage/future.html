@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+        <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" rel="stylesheet">
+        <link href="styles.css" rel="stylesheet">
+        <title>My Webpage</title>
+    </head>
+
+    <body class="body">
+         <!-- Imported from Bootstrap -->
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+          <a class="navbar-brand" href="index.html">Home</a>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+              <li class="nav-item active">
+                <a class="nav-link" href="past.html">Past <span class="sr-only">(current)</span></a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="present.html">Present</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="future.html" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  Future
+                </a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <a class="dropdown-item" href="#">Finance</a>
+                  <a class="dropdown-item" href="#">Computer</a>
+                  <div class="dropdown-divider"></div>
+                  <a class="dropdown-item" href="#">Physics</a>
+                </div>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
+              </li>
+            </ul>
+            <form class="form-inline my-2 my-lg-0">
+              <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+              <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+            </form>
+          </div>
+        </nav>
+         <h1 class="h">
+            FUTURE
+        </h1>
+        <p class="p">
+            My goal is to further improve on those three areas.
+            <br>
+            I allocate 50% of my time to the system, to keep the other 50 running at full pace.
+            This includes sleep, nutrition, sport and the other Maslows.
+            <br>
+            Then I allocate 30% of my time to Finance at a decreasing rate ensuring to build
+            up initial ressources as early as possible to focus less on Finance.
+            <br>
+            Next, 20% shall be allocated to Computers. Physics may be occassionally followed out of
+            interest, but with my current limited capabilities to build something out of it, it is
+            not of that much interest. Once ressources have been maximized via Finances though, it
+            shall be reinstalled at full pace including accessories such as my own obeservatorium.
+
+        </p>
+
+        <div style="text-align: center">
+            <form onsubmit="future(); return false;">
+                <input type="submit" value="Dive into the Future">
+            </form>
+        </div>
+
+        <div id="futureresult" class="p">
+
+        </div>
+
+        <script>
+            function future() {
+
+                document.querySelector('#futureresult').innerHTML="Sending you into the future...";
+
+                setTimeout(function(){ window.location.href = "https://www.futuretimeline.net/beyond-1000000.htm#dark";}, 3000);
+            }
+        </script>
+    </body>
+
+</html>
