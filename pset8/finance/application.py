@@ -37,9 +37,11 @@ Session(app)
 # Configure CS50 Library to use SQLite database
 db = SQL("sqlite:///finance.db")
 
-# Make sure API key is set
+# Make sure API key is set ; Key: pk_1eb1d0f01d5d40bab64da238428a5a7c 
+# Set key via export API_KEY=key
 if not os.environ.get("API_KEY"):
     raise RuntimeError("API_KEY not set")
+
 
 # Check if US markets are open
 def is_time_between(begin_time, end_time, check_time=None):
